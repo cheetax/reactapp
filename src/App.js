@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import { NumberField, DateField } from 'material-inputfield';
-import {Calendar} from 'ch-calendar'
+import { Calendar } from 'ch-calendar';
 //import InputField from 'md-inputfield/src/InputField'
 //import InputField from './InputFieldTest'
 import 'material-inputfield/dist/material-inputfield.css'
@@ -20,7 +20,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' value={2018} type='number' label='Label' />
-        <DateField outlined onSpinButtons onChange={(event) => console.log(event)} name='label' value={new Date()} type='number' label='Data' />
+        <DateField outlined onSpinButtons onChange={(event) => console.log(event)} name='label' value={new Date()} label='Data' />
         <Calendar date={date} toClose={false} onSelect={(date) => {
           console.log(date)
         }} />
