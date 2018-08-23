@@ -21,12 +21,12 @@ class App extends Component {
         </header>
         <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' value={2018} type='number' label='Label' />
         <DateField outlined onSpinButtons onChange={(event) => console.log(event)} name='label' value={new Date()} label='Data' />
-        <Calendar date={date} toClose={false} onSelect={(date) => {
+        {/* <Calendar date={date} toClose={false} onSelect={(date) => {
           console.log(date)
         }} />
         <Calendar isMonth date={date} toClose={false} onSelect={(date) => {
           console.log(date)
-        }}/>
+        }}/> */}
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
