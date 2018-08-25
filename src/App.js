@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import { NumberField, DateField } from 'material-inputfield';
-import { Calendar } from 'ch-calendar';
+//import { Calendar } from 'ch-calendar';
 //import InputField from 'md-inputfield/src/InputField'
 //import InputField from './InputFieldTest'
 import 'material-inputfield/dist/material-inputfield.css'
-import 'ch-calendar/dist/ch-calendar.css'
+//import 'ch-calendar/dist/ch-calendar.css'
 import './App.css';
 
 class App extends Component {
