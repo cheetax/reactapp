@@ -1,11 +1,10 @@
+
+import { DateField, NumberField } from 'material-inputfield';
+import 'material-inputfield/dist/material-inputfield.css';
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import { NumberField, DateField } from 'material-inputfield';
-import 'material-inputfield/dist/material-inputfield.css'
 import './App.css';
 
 class App extends Component {
-
 
   render() {
     const date = new Date()
@@ -18,14 +17,6 @@ class App extends Component {
           <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' value={2018} type='number' label='Label' />
           <DateField outlined onSpinButtons onChange={(event) => console.log(event.target.value)} name='label' value={new Date()} label='Data' />
         </div>
-
-        {/* <Calendar date={date} toClose={false} onSelect={(date) => {
-          console.log(date)
-        }} />
-        <Calendar isMonth date={date} toClose={false} onSelect={(date) => {
-          console.log(date)
-        }}/> */}
-
       </div>
     );
   }
