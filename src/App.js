@@ -17,7 +17,7 @@ class App extends Component {
           <NumberField outlined onSpinButtons onChange={(event) => console.log(event)} name='label' value={2018} type='number' label='Label' />
           <DateField outlined onChange={(event) => console.log(event.target.value)} name='date' value={date} label='Date' />
           <MonthField outlined onChange={(event) => console.log(event.target.value)} name='month' value={date} label='Month' />
-          <QuarterField outlined onSpinButtons onChangeObject={(obj) => console.log(obj)} name='quarter' value={date} label='Quarter' />
+          <QuarterField outlined onSpinButtons onChangeObject={(obj) => console.log(obj)} name='quarter' value={date} label='Quarter' /> 
         </div>
       </div>
     );
