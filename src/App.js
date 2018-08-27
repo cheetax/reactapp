@@ -15,7 +15,7 @@ class App extends Component {
         </header>
         <div className='App-intro' >
           <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' value={2018} type='number' label='Label' />
-          <DateField outlined onSpinButtons onChange={(event) => console.log(event.target.value)} name='label' value={new Date()} label='Data' />
+          <DateField outlined onSpinButtons onChange={(event) => console.log(event.target.value)} name='label' value={date} label='Data' />
         </div>
       </div>
     );
