@@ -2,7 +2,7 @@
   "name": "md-inputfield",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://cheetax.github.io/reactapp",
+  "homepage": "http://cheetax.github.io/reactapp",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "material-inputfield": "^0.1.14",
