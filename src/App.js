@@ -1,5 +1,5 @@
 
-import { DateField, NumberField, MonthField, QuarterField } from 'material-inputfield';
+import { DateField, NumberField, MonthField, QuarterField, YearField } from 'material-inputfield';
 import 'material-inputfield/dist/material-inputfield.css';
 import React, { Component } from 'react';
 import './App.css';
@@ -14,10 +14,11 @@ class App extends Component {
           <h1 className="App-title">Test Input Field</h1>
         </header>
         <div className='App-intro' >
-          <NumberField outlined onSpinButtons onChange={(event) => console.log(event)} name='label' value={2018} type='number' label='Label' />
-          <DateField outlined onChange={(event) => console.log(event.target.value)} name='date' value={date} label='Date' />
-          <MonthField outlined onChange={(event) => console.log(event.target.value)} name='month' value={date} label='Month' />
+          <NumberField outlined onSpinButtons onChange={(event) => console.log(event)} name='label' value={123456789} type='number' label='Label' />
+          <DateField outlined onCalendarButton onSpinButtons onChange={(event) => console.log(event.target.value)} name='date' value={date} label='Date' />
+          <MonthField outlined onCalendarButton onSpinButtons onChange={(event) => console.log(event.target.value)} name='month' value={date} label='Month' />
           <QuarterField outlined onSpinButtons onChangeObject={(obj) => console.log(obj)} name='quarter' value={date} label='Quarter' /> 
+          <YearField outlined onSpinButtons onChangeObject={(obj) => console.log(obj)} name='year' value={date} label='Year' />
         </div>
       </div>
     );
