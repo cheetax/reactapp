@@ -15,6 +15,7 @@ class App extends Component {
         </header>
         <h3>Filled text fields</h3>
         <div className='App-intro' >
+          <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' type='number' label='Label' />
           <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' value={123456789} type='number' label='Label' />
           <DateField onCalendarButton onSpinButtons onChange={(event) => console.log(event.target.value)} name='date' value={date} label='Date' />
           <MonthField onCalendarButton onSpinButtons onChange={(event) => console.log(event.target.value)} name='month' value={date} label='Month' />
@@ -23,6 +24,7 @@ class App extends Component {
         </div>
         <h3>Outlined text fields</h3>
         <div className='App-intro' >
+          <NumberField outlined onSpinButtons onChange={(event) => console.log(event)} name='label' type='text' label='Label' />
           <NumberField outlined onSpinButtons onChange={(event) => console.log(event)} name='label' value={123456789} type='number' label='Label' />
           <DateField outlined onCalendarButton onSpinButtons onChange={(event) => console.log(event.target.value)} name='date' value={date} label='Date' />
           <MonthField outlined onCalendarButton onSpinButtons onChange={(event) => console.log(event.target.value)} name='month' value={date} label='Month' />
