@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://cheetax.github.io/reactapp",
   "dependencies": {
+    "date-fns": "^1.29.0",
     "gh-pages": "^1.2.0",
     "material-inputfield": "^0.4.4",
     "react": "^16.4.2",
