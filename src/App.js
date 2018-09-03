@@ -2,21 +2,12 @@
 import { DateField, NumberField, MonthField, QuarterField, YearField } from 'material-inputfield';
 import 'material-inputfield/dist/material-inputfield.css';
 import React, { Component } from 'react';
-import { parse, isDate, isValid, format, addDays } from 'date-fns';
 import './App.css';
-
-function toDate(dateStr) {
-  const [day, month, year] = dateStr.split("-")
-  return new Date(year, month - 1, day)
-}
 
 class App extends Component {
 
   render() {
-    const _d = toDate('24-09-2018')
-    //var str = new Date();
-    const __d = this.props.value && (isDate(this.props.value) ? format(this.props.value, 'DD-MM-YYYY') : format(_d, 'DD-MM-YYYY')) || format(_d, 'DD-MM-YYYY')
-    const d = addDays(_d, -1)
+    
     const date = new Date();
     return (
       <div className="App">
