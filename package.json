@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://cheetax.github.io/reactapp",
   "dependencies": {
+    "@material-ui/core": "^3.0.2",
     "date-fns": "^1.29.0",
     "gh-pages": "^1.2.0",
     "material-inputfield": "^0.4.5",
