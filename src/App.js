@@ -1,8 +1,10 @@
 
 import { DateField, NumberField, MonthField, QuarterField, YearField } from 'material-inputfield';
 import 'material-inputfield/dist/material-inputfield.css';
+import {Calendar } from 'ch-calendar'
 import React, { Component } from 'react';
 import './App.css';
+import 'ch-calendar/dist/ch-calendar.css'
 
 class App extends Component {
 
@@ -14,7 +16,8 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Test Input Field</h1>
         </header>
-        <h3>Filled text fields</h3>
+        <div className='App-intro'><Calendar isModal isActive isMonth date={date} onSelect={(date) => {console.log(date)}} /> </div>
+        <h3>Filled text fields</h3>        
         <div className='App-intro' >
           <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' type='number' label='Label' />
           <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' value={123456789} type='number' label='Label' />
