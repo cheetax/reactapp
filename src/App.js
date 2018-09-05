@@ -33,8 +33,8 @@ class App extends Component {
           onChange={this.handleChange('checkedA')}
           value="checkedA"
         />
-        <div className='App-intro'><Calendar isModal isActive={this.state.checkedA} isMonth date={date} onSelect={(date) => { console.log(date) }} /> </div>
-        {/* <div className='App-intro'><Calendar isModal isButtonActive isActive={this.state.checkedA} isMonth date={date} onSelect={(date) => { console.log(date) }} /> </div> */}
+        {/* <div className='App-intro'><Calendar isModal isActive={this.state.checkedA} isMonth date={date} onSelect={(date) => { console.log(date) }} /> </div> */}
+        <div className='App-intro'><Calendar isModal isButtonActive isActive={this.state.checkedA} isMonth date={date} onSelect={(date) => { console.log(date) }} /> </div>
         <h3>Filled text fields</h3>
         <div className='App-intro' >
           <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' type='number' label='Label' />
