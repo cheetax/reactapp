@@ -8,6 +8,7 @@
     "date-fns": "^1.29.0",
     "gh-pages": "^1.2.0",
     "material-inputfield": "^0.4.5",
+    "material-ui": "^0.20.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.4"
