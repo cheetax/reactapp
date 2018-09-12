@@ -27,20 +27,20 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Test Input Field</h1>
         </header>
-        <Switch
+        {/* <Switch
           checked={this.state.checkedA}
           onChange={this.handleChange('checkedA')}
           value="checkedA"
-        />
+        /> */}
         {/* <div className='App-intro'><Calendar isModal isActive={this.state.checkedA} isMonth date={date} onSelect={(date) => { console.log(date) }} /> </div> */}
         <div className='App-intro'>           
           {/* modal<Calendar toClose={false} isModal isButtonActive onSelect={(date) => { console.log(date) }} />
           isActive<Calendar toClose isActive={this.state.checkedA} isButtonActive onSelect={(date) => { this.setState({ checkedA: !this.state.checkedA }); console.log(this.state.checkedA) }} /> */}
-          <Calendar isModal isActive onSelect={(date) => { console.log(date); this.setState({ checkedA: !this.state.checkedA }); }} />
+          {/* <Calendar isModal isActive onSelect={(date) => { console.log(date); this.setState({ checkedA: !this.state.checkedA }); }} /> */}
           {/* Not close<Calendar toClose={false} isActive onSelect={(date) => { console.log(date) }} /> */}
         </div>
         <h3>Filled text fields</h3>
-        {/* <div className='App-intro' >
+        <div className='App-intro' >
           <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' type='number' label='Label' />
           <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' value={123456789} type='number' label='Label' />
           <DateField onCalendarButton onSpinButtons onChangeObject={(obj) => console.log(obj)} name='date' value={date} label='Date' />
@@ -56,7 +56,7 @@ class App extends Component {
           <MonthField outlined onCalendarButton onSpinButtons onChange={(event) => console.log(event.target.value)} name='month' value={date} label='Month' />
           <QuarterField outlined onSpinButtons onChangeObject={(obj) => console.log(obj)} name='quarter' value={date} label='Quarter' />
           <YearField outlined onSpinButtons onChangeObject={(obj) => console.log(obj)} name='year' value={date} label='Year' />
-        </div> */}
+        </div>
       </div>
     );
   }
