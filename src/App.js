@@ -44,7 +44,7 @@ class App extends Component {
           <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' type='number' label='Label' />
           <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' value={123456789} type='number' label='Label' />
           <DateField onCalendarButton onSpinButtons onChangeObject={(obj) => console.log(obj)} name='date' value={date} label='Date' />
-          <MonthField onCalendarButton onSpinButtons onChange={(event) => console.log(event.target.value)} name='month' value={date} label='Month' />
+          <MonthField onCalendarButton onSpinButtons onChangeObject={(obj) => console.log(obj)} name='month' value={date} label='Month' />
           <QuarterField onSpinButtons onChangeObject={(obj) => console.log(obj)} name='quarter' value={date} label='Quarter' />
           <YearField onSpinButtons onChangeObject={(obj) => console.log(obj)} name='year' value={date} label='Year' />
         </div>
