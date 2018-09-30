@@ -20,6 +20,8 @@ class App extends Component {
     this.setState({ [name]: event.target.checked });
   };
 
+  _renderBtnSpin = () => <div>A</div>
+
   render() {
     const date = new Date();
     return (
@@ -41,7 +43,7 @@ class App extends Component {
         </div>
         <h3>Filled text fields</h3>
         <div className='App-intro' >
-          <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' type='number' label='Label' />
+          <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' type='number' label='Label' extSpinButton={this._renderBtnSpin} />
           <NumberField onSpinButtons onChange={(event) => console.log(event)} name='label' value={123456789} type='number' label='Label' />
           <DateField onCalendarButton onSpinButtons onChangeObject={(obj) => console.log(obj)} name='date' value={date} label='Date' />
           <MonthField onCalendarButton onSpinButtons onChangeObject={(obj) => console.log(obj)} name='month' value={date} label='Month' />
