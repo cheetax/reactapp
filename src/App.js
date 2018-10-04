@@ -29,17 +29,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Test Input Field</h1>
         </header>
-        {/* <Switch
-          checked={this.state.checkedA}
-          onChange={this.handleChange('checkedA')}
-          value="checkedA"
-        /> */}
-        {/* <div className='App-intro'><Calendar isModal isActive={this.state.checkedA} isMonth date={date} onSelect={(date) => { console.log(date) }} /> </div> */}
-        <div className='App-intro'>           
-          {/* modal<Calendar toClose={false} isModal isButtonActive onSelect={(date) => { console.log(date) }} />
-          isActive<Calendar toClose isActive={this.state.checkedA} isButtonActive onSelect={(date) => { this.setState({ checkedA: !this.state.checkedA }); console.log(this.state.checkedA) }} /> */}
-          {/* <Calendar isModal isActive onSelect={(date) => { console.log(date); this.setState({ checkedA: !this.state.checkedA }); }} /> */}
-          {/* Not close<Calendar toClose={false} isActive onSelect={(date) => { console.log(date) }} /> */}
+        <div className='App-intro'>
         </div>
         <h3>Filled text fields</h3>
         <div className='App-intro' >
