@@ -2,11 +2,12 @@
 import { DateField, NumberField, MonthField, QuarterField, YearField, PeriodField } from 'material-inputfield';
 import 'material-inputfield/dist/material-inputfield.css';
 import { SelectedListView } from 'selected-list-view'
-import { Calendar } from 'ch-calendar'
-import Switch from '@material-ui/core/Switch';
+//import { Calendar } from 'ch-calendar'
+//import Switch from '@material-ui/core/Switch';
 import React, { Component } from 'react';
 import './App.css';
 import 'ch-calendar/dist/ch-calendar.css'
+import 'selected-list-view/dist/selected-list-view.css'
 
 
 var users = [
@@ -85,7 +86,7 @@ class App extends Component {
           <NumberField
             outlined
             readOnly
-            //onSpinButtons
+           // onSpinButtons
             onChange={(event) => console.log(event)}
             name='label' value={this._valueSelectedUser()}
             type='text'
